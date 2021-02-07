@@ -121,13 +121,14 @@
       if(liff.isLoggedIn()){
         getEnvironment()
         getUserProfile()
+        createUniversalLink()
       }else{
         liff.login()
       }
       
       // getContext()
       // getFriendship()
-      createUniversalLink()
+      
 
       const queryString=decodeURIComponent(window.locaiton.search)
       const params=new URLSearchParams(queryString)
