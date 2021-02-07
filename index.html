@@ -49,6 +49,12 @@
     }
 
     async function shareMsg() {
+      await liff.shareTargetPicker([
+        {
+          type:"text",
+          text:"Hello Friend sent from Line Liff"
+        }
+      ])
     }
 
     function logOut() {
