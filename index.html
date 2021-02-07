@@ -52,6 +52,8 @@
     }
 
     function logOut() {
+      liff.logout()
+      window.location.reload()
     }
 
     function closed() {
@@ -92,7 +94,7 @@
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
       document.getElementById("isInClient").append(liff.isInClient())
-      
+      document.getElementById("isLoggedIn").append(liff.isLoggedIn())
       if(liff.isInClient()){
         document.getElementById("btnLogOut").style.display="none"
       }else{
